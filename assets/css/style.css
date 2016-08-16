@@ -130,9 +130,7 @@ label{
 .g-vertical-line-top{
 	border-top: threedlightshadow thin solid;
 }
-.g-vertical-line-right{
-	border-right: threedlightshadow thin solid;
-}
+
 .g-section-header{
 	font-size: 14px;
 	font-weight: bold;
@@ -245,9 +243,9 @@ label{
 /* .g-header-img{
 	content: url(../img/gomaie_logo.png);
 } */
-.g-header-above-menu{
+/* .g-header-above-menu{
 	height: 50px;
-}
+} */
 .g-header-signed-in{
 	text-align: right; 
 	padding-top: 5px;
@@ -300,12 +298,12 @@ label{
 }
 
 /*************** Search **********************/
-.g-quick-search-label{
+/* .g-quick-search-label{
 	text-align: right;
-}
-.g-search-result-label{
+} */
+/* .g-search-result-label{
 	text-align: right; padding-left: 0px; padding-right: 0px;
-}
+} */
 .g-search-result-text{
 	text-align: left; padding-right: 0px;
 }
@@ -314,11 +312,17 @@ label{
 /************** Media quries **************/
 /******************************************/
 @media (min-width: 768px) and (max-width: 979px) {
+	.g-header-above-menu{
+		height: 50px;
+	}
 	.g-quick-search-label{
 		text-align: right;
 	}
 	.g-search-result-label{
 		text-align: right; padding-left: 0px; padding-right: 0px;
+	}
+	.g-home-vertical-line{
+		border-right: threedlightshadow thin solid;
 	}
 }
 @media (max-width:767px) {
@@ -331,20 +335,35 @@ label{
 	.g-search-result-label{
 		text-align: left; padding-left: 13px; padding-right: 0px;
 	}
+	.g-home-vertical-line{
+		/* do nothing */
+	}
 }
 @media (max-width:480px) {
+	.g-header-above-menu{
+		height: 70px;
+	}
 	.g-quick-search-label{
 		text-align: left;
 	}
 	.g-search-result-label{
 		text-align: left; padding-left: 13px; padding-right: 0px;
+	}
+	.g-home-vertical-line{
+		/* do nothing */
 	}
 }
 @media (max-width:320px) {
+	.g-header-above-menu{
+		height: 70px;
+	}
 	.g-quick-search-label{
 		text-align: left;
 	}
 	.g-search-result-label{
 		text-align: left; padding-left: 13px; padding-right: 0px;
+	}
+	.g-home-vertical-line{
+		/* do nothing */
 	}
 }
