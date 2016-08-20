@@ -28,7 +28,7 @@
 							<div class="row g-header-above-menu">
 								<div class="col-md-12">
 									<!-- <div class="g-header-date-text">Sunday, 7<sup>th</sup> August 2016</div> -->
-									<!-- <div class="g-header-signed-in">Signed in as <b>sumedhjoshi.it@gmail.com</b></div> -->
+									<div class="g-header-signed-in">Signed in as <span class="g-text-bold">giridharpatel.it@gmail.com</span></div>
 								</div>
 							</div>
 							
@@ -46,20 +46,19 @@
 									    </div>
 									    <div class="collapse navbar-collapse g-menu-collapse" id="g-navbar-collapse-id">
 									      <ul class="nav navbar-nav navbar-right"> 
-									        <li  class="active"><a href="#section1">Sign in or Register</a></li>
-									        <li ><a href="#section2" class="g-menu">Features</a></li>
-									        <li><a href="#section3">How it works</a></li>
-									        <li><a href="#section4">Pricing</a></li>
-									        <li class="dropdown">
-									          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
+									        <li><a href="home.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+									        <li><a href="search.html">Search</a></li>
+									        <li><a href="update-profile.html">Update Profile</a></li>
+									        <li><a href="preview-profile.html">Preview Profile</a></li>
+									        <li><a href="privacy-settings.html">Privacy Settings</a></li>
+									        <li class="dropdown active">
+									          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> Giridhar <span class="glyphicon glyphicon-triangle-bottom"></span></a>
 									          <ul class="dropdown-menu">
-									            <li><a href="home.html" class="g-sub-menu-a">Home</a></li>
-									            <li><a href="search.html" class="g-sub-menu-a">Search</a></li>
-									            <li><a href="header.html" class="g-sub-menu-a">Header</a></li>
-									            <li><a href="footer.html" class="g-sub-menu-a">Footer</a></li>
-									            <!-- <li><a href="#" class="g-sub-menu-a">Account Settings</a></li>
+									            <li><a href="messages.html" class="g-sub-menu-a">Messages <span class="badge">2</span></a></li>
+									            <li><a href="shortlisted-profiles.html" class="g-sub-menu-a">Shortlisted Profiles <span class="badge">3</span></a></li>
+									            <li class="active"><a href="account-settings.html" class="g-sub-menu-a">Account Settings</a></li>
 									            <li role="separator" class="divider"></li>
-									            <li><a href="#" class="g-sub-menu-a">Sign out</a></li> -->
+									            <li><a href="index.html" class="g-sub-menu-a">Sign out</a></li>
 									          </ul>
 									        </li>
 									      </ul>
@@ -77,54 +76,11 @@
 		</div>
 
 		<div id="content">
-			<div class="row" style="width: 100%;">
+			<div class="row"  style="width: 100%;">
 				<div class="col-md-1"></div>
 				<div class="col-md-10">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-md-1"></div>
-							<div class="col-md-10">
-								<div class="g-welocome-msg"><h1><b>Welcome to Gomaie^</b></h1></div>
-								<div class="row g-welcome-sign-in-gap">
-									<div class="col-md-12"></div>
-								</div>
-								<div class="row">
-									<div class="col-md-6">
-										<form action="#" method="post" role="form" class="g-sign-in-form">
-											<div class="g-sign-in-label"> 
-												Sign in
-											</div>
-											<div class="g-sign-in-form-email-div">
-												<input type="email" placeholder="Email Address" class="form-control g-input-sign-in">
-											</div>
-											<div>
-												<input type="password" placeholder="Password" class="form-control g-input-sign-in">
-											</div>
-											<div class="g-sign-in-form-btn-div">
-												<input type="button" value="Sign in" class="form-control btn-primary g-sign-in-button">
-											</div>
-										</form>
-									</div>
-									<div class="col-md-6 g-vertical-line-left g-register-form-div">
-										<form action="#" method="post" role="form" >
-											<div class="g-sign-in-label">
-												Register Now
-											</div>
-											<div class="g-register-form-email-div">
-												<input type="email" placeholder="Email Address" class="form-control g-input-sign-in">
-											</div>
-											<div>
-												<input type="password" placeholder="Password" class="form-control g-input-sign-in">
-											</div>
-											<div class="g-register-form-btn-div">
-												<input type="button" value="Sign up" class="form-control btn-primary g-sign-in-button">
-											</div>
-										</form>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-1"></div>
-						</div>
+					<div class="container-fluid" style="padding-left: 0px; padding-right: 0px;">
+						
 					</div>
 				</div>
 				<div class="col-md-1"></div>
@@ -157,7 +113,7 @@
 							<div class="g-footer-logo">Gomaie^</div>
 						</div>
 						<div class="col-md-4">
-							<div class="g-copyright-text">©2016 All rights reserved.</div>
+							<div class="g-copyright-text" >©2016 All rights reserved.</div>
 						</div>
 					</div>
 				</div>
@@ -171,6 +127,15 @@
     <!-- Javascript -->
     <script src="assets/components/jquery/dist/jquery.min.js"></script>
 	<script src="assets/components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="assets/components/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+	<script src="assets/components/lightbox2/dist/js/lightbox.js"></script>
+	<script src="assets/components/typeahead.js/dist/typeahead.bundle.js"></script>
+    
+    <script type="text/javascript">
+		$(document).ready(function ($) {
+			
+		});
+	</script>
     
 </body>
 </html>

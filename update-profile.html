@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Gomaie^</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="assets/components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+		
+		<style type="text/css">
+			body {
+				padding-top: 120px;	
+			}
+			section {
+				margin-top: 40px;
+			}
+			section:first-of-type {
+				margin-top: 0;
+			}
+			.page-heading {
+				padding: 20px 0 40px;
+				text-align: center;
+			}
+			
+			.divider {
+				border-bottom: 1px solid #ccc;
+			}
+			#fake-footer {
+				/* height: 600px;
+				width: 100%;
+				background: #ccc; */
+			}
+			li a {
+				transition-duration: 1s;
+			}
+			
+			/* Helpers for top position on internal page links
+			====================================================*/
+			#topPos:before,
+			h3:before {
+			  display: block;
+			  content: " ";
+			  margin-top: -100px;
+			  height: 100px;
+			  visibility: hidden; 
+			}
+			/* AFFIX STYLES
+			====================================================*/
+			.panel-affix {
+				min-width: 225px;
+			}
+		</style>
+		
+	</head>
+
+<body>
+
+<div id="wrapper">
+	
+<nav class="navbar navbar-default navbar-fixed-top" >
+	<div class="container-fluid">
+		
+		<div id="header">
+			<div class="row" style="width: 100%">
+				<div class="col-md-1"></div>
+				
+				<div class="col-md-10 one-edge-shadow">
+					
+					<div class="row">
+						<div class="col-md-2">
+							<div class="g-header-img-div"><img alt="img" src="assets/img/gomaie_logo.png" width="140px;" class="img-rounded img-responsive"/></div>
+							<!-- <div>a private portal</div> -->
+						</div>
+						
+						<div class="col-md-10">
+							<div class="row g-header-above-menu">
+								<div class="col-md-12">
+									<div class="g-header-date-text">Sunday, 7<sup>th</sup> August 2016</div>
+									<div class="g-header-signed-in">Signed in as <span class="g-text-bold">giridharpatel.it@gmail.com</span></div>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-12">
+									<nav class="navbar navbar-default">
+									  <div class="container-fluid g-menu-container">
+									    <div class="navbar-header">
+									      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#g-navbar-collapse-id" aria-expanded="false">
+									        <span class="sr-only">Toggle navigation</span>
+									        <span class="icon-bar"></span>
+									        <span class="icon-bar"></span>
+									        <span class="icon-bar"></span>
+									      </button>
+									    </div>
+									    <div class="collapse navbar-collapse g-menu-collapse" id="g-navbar-collapse-id">
+									      <ul class="nav navbar-nav navbar-right" id="menu1" name="menu1"> 
+									        <li  data-parent="#menu1"><a data-parent="#menu1"href="home.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+									        <li  data-parent="#menu1"><a data-parent="#menu1" href="search.html" >Search</a></li>
+									        <li  data-parent="#menu1" class="active"><a data-parent="#menu1" href="update-profile.html" >Update Profile</a></li>
+									        <li  data-parent="#menu1"><a data-parent="#menu1" href="preview-profile.html" >Preview Profile</a></li>
+									        <li  data-parent="#menu1"><a data-parent="#menu1" href="privacy-settings.html" >Privacy Settings</a></li>
+									        <!-- <li class="dropdown">
+									          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> Giridhar <span class="glyphicon glyphicon-triangle-bottom"></span></a>
+									          <ul class="dropdown-menu">
+									            <li><a href="messages.html" class="g-sub-menu-a">Messages <span class="badge">2</span></a></li>
+									            <li><a href="shortlisted-profiles.html" class="g-sub-menu-a">Shortlisted Profiles <span class="badge">3</span></a></li>
+									            <li><a href="account-settings.html" class="g-sub-menu-a">Account Settings</a></li>
+									            <li role="separator" class="divider"></li>
+									            <li><a href="index.html" class="g-sub-menu-a">Sign out</a></li>
+									          </ul>
+									        </li> -->
+									      </ul>
+									    </div>
+									  </div>
+									</nav>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-1"></div>
+			</div>
+			<div class="row" style="width: 100%">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					Update Profile
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+		
+	</div>
+</nav>
+
+<div id="content">
+
+<div class="row" style="width: 100%;">
+				<div class="col-md-1"></div>
+				<div class="col-md-10" style="padding-left: 12px;">
+				
+<div class="container-fluid" name="toTop" id="topPos" data-spy="scroll" style="position: relative;" data-target="#myScrollspy">
+	<div class="row">
+		<div class="col-md-3 hidden-sm hidden-xs">
+			<div class="panel panel-default panel-affix" id="myScrollspy">
+				<div class="panel-body">
+					<ul class="nav nav-pills nav-stacked"  id="menu2" name="menu2">
+						<li data-parent="#menu2"><a href="#sectionOne" >Section One</a></li>
+						<li data-parent="#menu2"><a href="#sectionTwo" >Section Two</a></li>
+						<li data-parent="#menu2"><a href="#sectionThree"  >Section Three</a></li>
+						<li data-parent="#menu2"><a href="#sectionFour"  >Section Four</a></li>
+						<!-- <li><a href="#sectionFive">Section Five</a></li>
+						<li><a href="#sectionSix">Section Six</a></li>
+						<li><a href="#sectionSeven">Section Seven</a></li>
+						<li><a href="#sectionEight">Section Eight</a></li>
+						<li><a href="#sectionNine">Section Nine</a></li>
+						<li><a href="#sectionTen">Section Ten</a></li>
+						<li role="presentation" class="divider"></li>
+						<li><a href="#toTop">Back To Top <span class="glyphicon glyphicon-hand-up"></span></a></li> -->
+					</ul>
+				</div>
+			</div>	
+		</div>
+		<div class="col-md-9">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					Panel heading
+				</div>
+				<div class="panel-body">
+					<span ></span>
+					<section id="sectionOne">
+						<h3>Section One</h3>
+						<h4><em>Thank you to the team at <a href="http://www.bluthemes.com/blog/7/dynamic-bootstrap-affix-fix">bluthemes</a> a huge help making this dynamic for wordpress a site!</em></h4>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
+
+						<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
+						
+						<p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante. Vivamus imperdiet nibh feugiat est.</p>
+					</section>
+
+					<section id="sectionTwo">
+						<h3>Section Two</h3>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
+						
+						<p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante. Vivamus imperdiet nibh feugiat est.</p>
+
+						<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
+					</section>
+
+					<section id="sectionThree">
+						<h3>Section Three</h3>
+						<p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante. Vivamus imperdiet nibh feugiat est.</p>
+						
+						<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
+
+						<p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.</p>
+					</section>
+	
+					<section id="sectionFour">
+						<h3>Section Four</h3>
+						<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
+
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
+						
+						<p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante. Vivamus imperdiet nibh feugiat est.</p>
+					</section>
+					
+					<section id="sectionFive">	
+						<h3>Section Five</h3>
+						<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
+						
+						<p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante. Vivamus imperdiet nibh feugiat est.</p>
+
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
+					</section>
+					
+					<section id="sectionSix">
+						<h3>Section Six</h3>
+						<p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante. Vivamus imperdiet nibh feugiat est.</p>
+						
+						<p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.</p>
+
+						<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
+					</section>
+					
+					<section id="sectionSeven"> 
+						<h3>Section Seven</h3>
+						<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
+						
+						<p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante. Vivamus imperdiet nibh feugiat est.</p>
+
+						<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
+					</section>
+					
+					<section id="sectionEight">
+						<h3>Section Eight</h3>
+						<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
+
+						<p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.</p>
+						
+						<p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante. Vivamus imperdiet nibh feugiat est.</p>
+					</section>
+					
+					<section id="sectionNine">
+						<h3>Section Nine</h3>
+						<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
+						
+						<p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante. Vivamus imperdiet nibh feugiat est.</p>
+
+						<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
+					</section>
+
+					<section id="sectionTen">
+						<h3>Section Ten</h3>
+						<p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante. Vivamus imperdiet nibh feugiat est.</p>
+						
+						<p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.</p>
+
+						<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
+					</section>
+				</div>
+
+			</div>	
+		</div>
+		<!-- //Close Col -->
+
+
+		
+
+	</div>
+</div>
+
+					</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+		
+<div id="fake-footer"></div>
+
+</div>
+<!-- <div id="footer">
+			<div class="row" style="width: 100%;">
+				<div class="col-md-1"></div>
+				<div class="col-md-10 g-footer-div">
+					<div class="row">
+						<div class="col-md-8 g-footer-div-div">
+							<b>About Gomaie:</b>
+							<p>Lorem Ipsum is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>	
+						</div>
+						<div class="col-md-1">
+						</div>
+						<div class="col-md-3 g-footer-div-div">
+							<div>Contact</div>
+							<div>Terms</div>
+							<div>Privacy Policy</div>
+							<div>Frequently Asked Questions</div>							
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6" style="text-align: left;">
+							Pages: <a href="#" class="g-pages-link">Sign in or Register</a> | <a href="#" class="g-pages-link">Home</a> | <a href="#" class="g-pages-link">Search</a> | <a href="#" class="g-pages-link">My Profile</a> | <a href="#" class="g-pages-link">Log out</a>
+						</div>
+						<div class="col-md-2">
+							<div class="g-footer-logo">Gomaie^</div>
+						</div>
+						<div class="col-md-4">
+							<div class="g-copyright-text" >©2016 All rights reserved.</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- <div id="wrapper">
+	
+		<div id="header">
+			<div class="row" style="width: 100%">
+				<div class="col-md-1"></div>
+				
+				<div class="col-md-10 one-edge-shadow">
+					
+					<div class="row">
+						<div class="col-md-2">
+							<div class="g-header-img-div"><img alt="img" src="assets/img/gomaie_logo.png" width="140px;" class="img-rounded img-responsive"/></div>
+							<div>a private portal</div>
+						</div>
+						
+						<div class="col-md-10">
+							<div class="row g-header-above-menu">
+								<div class="col-md-12">
+									<div class="g-header-date-text">Sunday, 7<sup>th</sup> August 2016</div>
+									<div class="g-header-signed-in">Signed in as <span class="g-text-bold">giridharpatel.it@gmail.com</span></div>
+								</div>
+							</div>
+							
+							<div class="row" >
+								<div class="col-md-12">
+									<nav class="navbar navbar-default">
+									  <div class="container-fluid g-menu-container">
+									    <div class="navbar-header">
+									      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#g-navbar-collapse-id" aria-expanded="false">
+									        <span class="sr-only">Toggle navigation</span>
+									        <span class="icon-bar"></span>
+									        <span class="icon-bar"></span>
+									        <span class="icon-bar"></span>
+									      </button>
+									    </div>
+									    <div class="collapse navbar-collapse g-menu-collapse" id="g-navbar-collapse-id">
+									      <ul class="nav navbar-nav navbar-right"> 
+									        <li><a href="home.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+									        <li><a href="search.html">Search</a></li>
+									        <li class="active"><a href="update-profile.html">Update Profile</a></li>
+									        <li><a href="preview-profile.html">Preview Profile</a></li>
+									        <li><a href="privacy-settings.html">Privacy Settings</a></li>
+									        <li class="dropdown">
+									          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> Giridhar <span class="glyphicon glyphicon-triangle-bottom"></span></a>
+									          <ul class="dropdown-menu">
+									            <li><a href="messages.html" class="g-sub-menu-a">Messages <span class="badge">2</span></a></li>
+									            <li><a href="shortlisted-profiles.html" class="g-sub-menu-a">Shortlisted Profiles <span class="badge">3</span></a></li>
+									            <li><a href="account-settings.html" class="g-sub-menu-a">Account Settings</a></li>
+									            <li role="separator" class="divider"></li>
+									            <li><a href="index.html" class="g-sub-menu-a">Sign out</a></li>
+									          </ul>
+									        </li>
+									      </ul>
+									    </div>
+									  </div>
+									</nav>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-1"></div>
+			</div>
+		</div> -->
+
+		<!-- <div id="content" >
+			<div class="row"  style="width: 100%;">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<div class="container-fluid" style="padding-left: 0px; padding-right: 0px;" >
+						<div class="row" style="padding-top: 20px;">
+							<div class="col-md-12">
+								<div class="row" >
+									<div class="col-md-3">
+										<nav id="myScrollspy">
+											<ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="70">
+												<li role="presentation" class="active" style="text-align: left;"><a style="padding-top: 8px; padding-bottom: 8px;" href="#s0">Basic Information</a></li>	Personal, Address, Education
+												<li role="presentation" style="text-align: left;" style="padding-top: 8px; padding-bottom: 8px;"><a href="#s1" style="padding-top: 8px; padding-bottom: 8px;">Family</a></li>
+	  											<li role="presentation" style="text-align: left;" style="padding-top: 8px; padding-bottom: 8px;"><a href="#s2">Occupation</a></li>
+	  											<li role="presentation" style="text-align: left;" style="padding-top: 8px; padding-bottom: 8px;"><a href="#s3">Astro</a></li>
+	  											<li role="presentation" style="text-align: left;" style="padding-top: 8px; padding-bottom: 8px;"><a href="#s4">Expectation</a></li>
+											</ul>
+										</nav>
+									</div>
+									<div class="col-md-9">
+										
+										<div id="s0"> 
+								          <h1>Section 0</h1>
+								          <p>Try to scroll this page and look at the navigation list while scrolling!</p>
+								          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+								        </div>
+										
+										<div id="s1"> 
+								          <h1>Section 1</h1>
+								          <p>Try to scroll this page and look at the navigation list while scrolling!</p>
+								          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+								        </div>
+								        
+								        <div id="s2"> 
+								          <h1>Section 2</h1>
+								          <p>Try to scroll this page and look at the navigation list while scrolling!</p>
+								          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+								        </div>
+								        
+								        <div id="s3"> 
+								          <h1>Section 3</h1>
+								          <p>Try to scroll this page and look at the navigation list while scrolling!</p>
+								          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+								        </div>
+								        
+								        <div id="s4"> 
+								          <h1>Section 4</h1>
+								          <p>Try to scroll this page and look at the navigation list while scrolling!</p>
+								          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+								        </div>
+								        
+									</div>
+								</div>
+							
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div> -->
+		
+		<!-- <div id="footer">
+			<div class="row" style="width: 100%;">
+				<div class="col-md-1"></div>
+				<div class="col-md-10 g-footer-div">
+					<div class="row">
+						<div class="col-md-8 g-footer-div-div">
+							<b>About Gomaie:</b>
+							<p>Lorem Ipsum is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>	
+						</div>
+						<div class="col-md-1">
+						</div>
+						<div class="col-md-3 g-footer-div-div">
+							<div>Contact</div>
+							<div>Terms</div>
+							<div>Privacy Policy</div>
+							<div>Frequently Asked Questions</div>							
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6" style="text-align: left;">
+							Pages: <a href="#" class="g-pages-link">Sign in or Register</a> | <a href="#" class="g-pages-link">Home</a> | <a href="#" class="g-pages-link">Search</a> | <a href="#" class="g-pages-link">My Profile</a> | <a href="#" class="g-pages-link">Log out</a>
+						</div>
+						<div class="col-md-2">
+							<div class="g-footer-logo">Gomaie^</div>
+						</div>
+						<div class="col-md-4">
+							<div class="g-copyright-text" >©2016 All rights reserved.</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+	 
+	</div> -->
+ 
+ 
+    <!-- Javascript -->
+    <script src="assets/components/jquery/dist/jquery.min.js"></script>
+	<script src="assets/components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="assets/components/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+	<script src="assets/components/lightbox2/dist/js/lightbox.js"></script>
+	<script src="assets/components/typeahead.js/dist/typeahead.bundle.js"></script>
+    
+    <script type="text/javascript">
+  //Navbar Box Shadow on Scroll 
+    /* $(function(){
+        var navbar = $('.navbar');
+        $(window).scroll(function(){
+            if($(window).scrollTop() <= 40){
+           		navbar.css('box-shadow', 'none');
+            } else {
+              navbar.css('box-shadow', '0px 10px 20px rgba(0, 0, 0, 0.4)'); 
+            }
+        });  
+    }) */
+
+
+    //Function from Bluthemes, lets you add li elemants to affix object without having to alter and data attributes set out by bootstrap
+    /* $(function(){
+
+    	// name your elements here
+    	var stickyElement   = '.panel-affix',   // the element you want to make sticky
+    		bottomElement   = '#fake-footer'; // the bottom element where you want the sticky element to stop (usually the footer) 
+
+    	// make sure the element exists on the page before trying to initalize
+    	if($( stickyElement ).length){
+    		$( stickyElement ).each(function(){
+
+    			console.log(" stickyElement... ");
+    			// let's save some messy code in clean variables
+    			// when should we start affixing? (the amount of pixels to the top from the element)
+    			var fromTop = $( this ).offset().top, 
+    				// where is the bottom of the element?
+    				fromBottom = $( document ).height()-($( this ).offset().top + $( this ).outerHeight()),
+    				// where should we stop? (the amount of pixels from the top where the bottom element is)
+    				// also add the outer height mismatch to the height of the element to account for padding and borders
+    				stopOn = $( document ).height()-( $( bottomElement ).offset().top)+($( this ).outerHeight() - $( this ).height()); 
+
+    			console.log(" stickyElement fromTop "+fromTop);
+    			console.log(" stickyElement fromBottom "+fromBottom);
+    			console.log(" stickyElement stopOn "+stopOn);
+    			
+    			// if the element doesn't need to get sticky, then skip it so it won't mess up your layout
+    			if( (fromBottom-stopOn) > 200 ){
+    				console.log(" stickyElement 536 ");
+    				// let's put a sticky width on the element and assign it to the top
+    				$( this ).css('width', $( this ).width()).css('top', 0).css('position', '');
+    				// assign the affix to the element
+    				$( this ).affix({
+    					offset: { 
+    						// make it stick where the top pixel of the element is
+    						top: fromTop - 80,  
+    						// make it stop where the top pixel of the bottom element is
+    						bottom: stopOn
+    					}
+    				// when the affix get's called then make sure the position is the default (fixed) and it's at the top
+    				}).on('affix.bs.affix', function(){ $( this ).css('top', '80px').css('position', ''); });
+    			}
+    			// trigger the scroll event so it always activates 
+    			$( window ).trigger('scroll'); 
+    		}); 
+    	}
+
+    }); */
+
+    //Offset scrollspy height to highlight li elements at good window height
+    $('body').scrollspy({
+    	offset: 80
+    });
+
+    //Smooth Scrolling For Internal Page Links
+    /* $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+    	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+    	  var target = $(this.hash);
+    	  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    	  if (target.length) {
+    		$('html,body').animate({
+    		  scrollTop: target.offset().top
+    		}, 1000);
+    		return false;
+    	  }
+    	}
+      });
+    }); */
+	</script>
+    
+</body>
+</html>

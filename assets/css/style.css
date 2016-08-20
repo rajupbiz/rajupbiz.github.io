@@ -11,7 +11,6 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,500i,600,600i,700,700i,800';
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i';
 
-
 /************** DOM elements ********************/
 /************************************************/
 html {
@@ -22,19 +21,20 @@ html {
 
 body {
     background: #fff;
-    text-align: center;
-    /* font-family: 'Open Sans', sans-serif; */
-    /* color: #888; */
+   /*  text-align: center; */
     color: #202020;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 13px;
-    /* color: #AB94A8; */
-    /* color: #9397BA; */
-    /* font-size: 12px; */
     height:100%;
     margin:0;
 	padding:0;
+	
+	/* color: #AB94A8; */
+    /* color: #9397BA; */
+    /* font-size: 12px; */
+    /* font-family: 'Open Sans', sans-serif; */
+    /* color: #888; */
 }
 
 label{
@@ -49,6 +49,8 @@ label{
 #wrapper {
 	min-height:100%;
 	position:relative;
+	/* padding-left: 0px;
+	padding-right: 0px; */
 }
 #content {
 	padding-bottom: 112px;
@@ -100,6 +102,7 @@ label{
 	/* font-size: 28pt; */
 	font-weight: bold;
 	font-family: cursive;
+	text-align: center;
 }
 .g-sign-in-label{
 	text-align: left;
@@ -283,9 +286,6 @@ label{
 	color: #FFFFFF;
 }
 .g-footer-div-div{
-	text-align: left
-}
-.g-footer-div-div{
 	text-align: left;
 	padding-top: 5px;
 }
@@ -310,7 +310,10 @@ label{
 	text-align: left; padding-right: 0px;
 }
 .g-header-above-menu{
-	height: 50px;
+	height: 35px;
+}
+.g-header{
+	height: 60px;
 }
 
 /************** Media quries **************/
@@ -328,6 +331,10 @@ label{
 	.g-home-vertical-line{
 		border-right: threedlightshadow thin solid;
 	}
+	.g-footer-div{
+		background-color: #1A87D7;  /*  #1E8184 */
+		color: #FFFFFF;
+	}
 }
 @media (max-width:767px) {
 	.g-header-above-menu{
@@ -341,6 +348,18 @@ label{
 	}
 	.g-home-vertical-line{
 		/* do nothing */
+	}
+	.g-header{
+		height: 110px;
+	}
+	.navbar-fixed-top{
+	    position: relative;
+	    top: auto;
+    }
+    .g-footer-div{
+		background-color: #1A87D7;  /*  #1E8184 */
+		color: #FFFFFF;
+		padding-left: 20px;
 	}
 }
 @media (max-width:480px) {
@@ -356,6 +375,20 @@ label{
 	.g-home-vertical-line{
 		/* do nothing */
 	}
+	.g-header{
+		height: 110px;
+	}
+	.g-footer-div{
+		background-color: #1A87D7;  /*  #1E8184 */
+		color: #FFFFFF;
+		padding-left: 20px;
+	}
+	.g-sign-in-form{
+		float: left;
+	}
+	.g-register-form-div{
+		padding-left: 10px;
+	}
 }
 @media (max-width:320px) {
 	.g-header-above-menu{
@@ -369,5 +402,13 @@ label{
 	}
 	.g-home-vertical-line{
 		/* do nothing */
+	}
+	.g-header{
+		height: 110px;
+	}
+	.g-footer-div{
+		background-color: #1A87D7;  /*  #1E8184 */
+		color: #FFFFFF;
+		padding-left: 20px;
 	}
 }
