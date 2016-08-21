@@ -300,6 +300,7 @@ label{
 }
 
 /*************** Update Profile **********************/
+/* for small screens */
 #sidebar.affix-top, #sidebar.affix {
 	position: static;
 }
@@ -321,8 +322,6 @@ label{
 .g-header{
 	height: 60px;
 }
-
-
 
 /************** Media quries **************/
 /******************************************/
@@ -394,15 +393,8 @@ label{
 		color: #FFFFFF;
 		padding-left: 20px;
 	}
-	#sidebar.affix-top {
+	#sidebar.affix-top, #sidebar.affix {
 		position: static;
-		margin-top: 30px;
-		width: 200px;
-	}
-	#sidebar.affix {
-		position: fixed;
-		top: 70px;
-		width: 200px;
 	}
 }
 @media (max-width:480px) {
@@ -432,6 +424,11 @@ label{
 	.g-register-form-div{
 		padding-left: 10px;
 	}
+	#sidebar.affix-top, #sidebar.affix {
+		position: static;
+	}
+	
+	
 }
 @media (max-width:320px) {
 	.g-header-above-menu{
