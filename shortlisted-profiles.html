@@ -7,88 +7,176 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="assets/css/style.css">
 	</head>
+	
+	<style>
+		.affix {
+			top: 90px;
+		}
+		.affix-top{
+			top: 90px;
+		}
+	  	.g-header{
+			height: 80px;
+		}
+ 	</style>
 
 <body>
 
-	<div id="wrapper">
-	
-		<div id="header">
-			<div class="row" style="width: 100%">
-				<div class="col-md-1"></div>
-				
-				<div class="col-md-10 one-edge-shadow">
-					
-					<div class="row">
-						<div class="col-md-2">
-							<div class="g-header-img-div"><img alt="img" src="assets/img/gomaie_logo.png" width="140px;" class="img-rounded img-responsive"/></div>
-							<!-- <div>a private portal</div> -->
-						</div>
-						
-						<div class="col-md-10">
-							<div class="row g-header-above-menu">
-								<div class="col-md-12">
-									<!-- <div class="g-header-date-text">Sunday, 7<sup>th</sup> August 2016</div> -->
-									<div class="g-header-signed-in">Signed in as <span class="g-text-bold">giridharpatel.it@gmail.com</span></div>
+	<!-- <div id="wrapper" > -->
+		<div id="header" class="container-fluid g-header">
+			<div class="row">
+				<div class="col-md-12">
+					<nav class="navbar navbar-default">
+						<div class="navbar-header" style="float: none;">
+							<div class="row">
+								<div class="col-md-1">
+									<!-- <h1>LHS</h1> -->
+								</div>
+								<div class="col-md-10 one-edge-shadow">
+									<div class="row">
+										<div class="col-md-2">
+											<div class="g-header-img-div"><img alt="img" src="assets/img/gomaie_logo.png" width="140px;" class="img-rounded img-responsive"/></div>
+											<!-- <div>a private portal</div> -->
+										</div>
+										
+										<div class="col-md-10">
+											<div class="row g-header-above-menu">
+												<div class="col-md-12">
+													<!-- <div class="g-header-date-text">Sunday, 7<sup>th</sup> August 2016</div> -->
+													<div class="g-header-signed-in">Signed in as <span class="g-text-bold">giridharpatel.it@gmail.com</span></div>
+												</div>
+											</div>
+											
+											<div class="row" >
+												<div class="col-md-12">
+													<nav class="navbar navbar-default">
+													  <div class="container-fluid g-menu-container">
+													    <div class="navbar-header">
+													      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#g-navbar-collapse-id" aria-expanded="false">
+													        <span class="sr-only">Toggle navigation</span>
+													        <span class="icon-bar"></span>
+													        <span class="icon-bar"></span>
+													        <span class="icon-bar"></span>
+													      </button>
+													    </div>
+													    <div class="collapse navbar-collapse g-menu-collapse" id="g-navbar-collapse-id">
+													      <ul class="nav navbar-nav navbar-right" style="padding-right: 5px;"> 
+													        <li><a href="home.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+													        <li><a href="search.html">Search</a></li>
+													        <li><a href="update-profile.html">Update Profile</a></li>
+													        <li ><a href="preview-profile.html">Preview Profile</a></li>
+													        <li class="active"><a href="privacy-settings.html">Privacy Settings</a></li>
+													        <li class="dropdown">
+													          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> Giridhar <span class="glyphicon glyphicon-triangle-bottom"></span></a>
+													          <ul class="dropdown-menu">
+													            <li><a href="messages.html" class="g-sub-menu-a">Messages <span class="badge">2</span></a></li>
+													            <li><a href="shortlisted-profiles.html" class="g-sub-menu-a">Shortlisted Profiles <span class="badge">3</span></a></li>
+													            <li><a href="account-settings.html" class="g-sub-menu-a">Account Settings</a></li>
+													            <li role="separator" class="divider"></li>
+													            <li><a href="index.html" class="g-sub-menu-a">Sign out</a></li>
+													          </ul>
+													        </li>
+													      </ul>
+													   	 	</div>
+													 	 </div>
+														</nav>
+													</div>
+												</div>	
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1">
+										<!-- <h1>RHS</h1> -->
+									</div>
 								</div>
 							</div>
-							
-							<div class="row" >
-								<div class="col-md-12">
-									<nav class="navbar navbar-default">
-									  <div class="container-fluid g-menu-container">
-									    <div class="navbar-header">
-									      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#g-navbar-collapse-id" aria-expanded="false">
-									        <span class="sr-only">Toggle navigation</span>
-									        <span class="icon-bar"></span>
-									        <span class="icon-bar"></span>
-									        <span class="icon-bar"></span>
-									      </button>
-									    </div>
-									    <div class="collapse navbar-collapse g-menu-collapse" id="g-navbar-collapse-id">
-									      <ul class="nav navbar-nav navbar-right"> 
-									        <li><a href="home.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-									        <li><a href="search.html">Search</a></li>
-									        <li class="active"><a href="update-profile.html">Update Profile</a></li>
-									        <li><a href="preview-profile.html">Preview Profile</a></li>
-									        <li><a href="privacy-settings.html">Privacy Settings</a></li>
-									        <li class="dropdown active">
-									          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> Giridhar <span class="glyphicon glyphicon-triangle-bottom"></span></a>
-									          <ul class="dropdown-menu">
-									            <li><a href="messages.html" class="g-sub-menu-a">Messages <span class="badge">2</span></a></li>
-									            <li class="active"><a href="shortlisted-profiles.html" class="g-sub-menu-a">Shortlisted Profiles <span class="badge">3</span></a></li>
-									            <li><a href="account-settings.html" class="g-sub-menu-a">Account Settings</a></li>
-									            <li role="separator" class="divider"></li>
-									            <li><a href="index.html" class="g-sub-menu-a">Sign out</a></li>
-									          </ul>
-									        </li>
-									      </ul>
-									    </div>
-									  </div>
-									</nav>
-								</div>
-							</div>	
-						</div>
+						</nav>
 					</div>
 				</div>
-
-				<div class="col-md-1"></div>
 			</div>
-		</div>
-
+		
 		<div id="content">
-			<div class="row"  style="width: 100%;">
+			<div class="row">
 				<div class="col-md-1"></div>
-				<div class="col-md-10">
-					<div class="container-fluid" style="padding-left: 0px; padding-right: 0px;">
+					<div class="col-md-10" style="padding-left: 12px;">
+						
+						<div class="container">
+						  <div class="row">
+						  	<div class="col-md-3">
+						  		<nav id="navId">
+							      <ul class="nav nav-pills nav-stacked" data-spy="affix">
+							        <li class="active"><a href="#sectionOne">Section 1</a></li>
+							        <li><a href="#sectionTwo">Section 2</a></li>
+							        <li><a href="#sectionThree">Section 3</a></li>
+							        <li><a href="#sectionFour">Section 4</a></li>
+							        <li><a href="#sectionFive">Section 5</a></li>
+							      </ul>
+							    </nav>
+						  	</div>
+						    
+						    <div class="col-md-9" >
+						    	<div id="scollPanel">
+						    
+							     	<section id="sectionOne">
+										<h3>Section One</h3>
+										<h4><em>Thank you to the team at <a href="http://www.bluthemes.com/blog/7/dynamic-bootstrap-affix-fix">bluthemes</a> a huge help making this dynamic for wordpress a site!</em></h4>
+										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
+							
+										<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
+										
+										<p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante. Vivamus imperdiet nibh feugiat est.</p>
+									</section>
+							
+									<section id="sectionTwo">
+										<h3>Section Two</h3>
+										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
+										
+										<p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante. Vivamus imperdiet nibh feugiat est.</p>
+							
+										<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
+									</section>
+							
+									<section id="sectionThree">
+										<h3>Section Three</h3>
+										<p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante. Vivamus imperdiet nibh feugiat est.</p>
+										
+										<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
+							
+										<p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.</p>
+									</section>
+							
+									<section id="sectionFour">
+										<h3>Section Four</h3>
+										<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
+							
+										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
+										
+										<p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante. Vivamus imperdiet nibh feugiat est.</p>
+									</section>
+									
+									<section id="sectionFive">	
+										<h3>Section Five</h3>
+										<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
+										
+										<p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante. Vivamus imperdiet nibh feugiat est.</p>
+							
+										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
+									</section>
+								</div>
+						    </div>
+						  </div>
+						</div>
+						
+						
+						
 						
 					</div>
+					<div class="col-md-1"></div>
 				</div>
-				<div class="col-md-1"></div>
 			</div>
-		</div>
 		
-		<div id="footer">
-			<div class="row" style="width: 100%;">
+	<!-- 	<div id="footer">
+			<div class="row">
 				<div class="col-md-1"></div>
 				<div class="col-md-10 g-footer-div">
 					<div class="row">
@@ -120,10 +208,8 @@
 				<div class="col-md-1"></div>
 			</div>
 		</div>
-	 
-	</div>
- 
- 
+	</div> -->
+			
     <!-- Javascript -->
     <script src="assets/components/jquery/dist/jquery.min.js"></script>
 	<script src="assets/components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -132,10 +218,15 @@
 	<script src="assets/components/typeahead.js/dist/typeahead.bundle.js"></script>
     
     <script type="text/javascript">
-		$(document).ready(function ($) {
-			
-		});
-	</script>
+    
+	    $('#navId').on('affix.bs.affix', function () {
+	        // alert('Fired!');
+	    	$("#scollPanel").css({
+	    		"top":"90px"
+	    	});
+	    });
+    
+    </script>
     
 </body>
 </html>

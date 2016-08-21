@@ -299,6 +299,12 @@ label{
 	border: 1px;
 }
 
+/*************** Update Profile **********************/
+#sidebar.affix-top, #sidebar.affix {
+	position: static;
+}
+
+
 /*************** Search **********************/
 .g-quick-search-label{
 	text-align: right;
@@ -316,8 +322,24 @@ label{
 	height: 60px;
 }
 
+
+
 /************** Media quries **************/
 /******************************************/
+
+@media (min-width: 979px) {
+	
+	#sidebar.affix-top {
+		position: static;
+		margin-top: 30px;
+		width: 200px;
+	}
+	#sidebar.affix {
+		position: fixed;
+		top: 70px;
+		width: 200px;
+	}
+}
 @media (min-width: 768px) and (max-width: 979px) {
 	.g-header-above-menu{
 		height: 50px;
@@ -334,6 +356,17 @@ label{
 	.g-footer-div{
 		background-color: #1A87D7;  /*  #1E8184 */
 		color: #FFFFFF;
+	}
+	
+	#sidebar.affix-top {
+		position: static;
+		margin-top: 30px;
+		width: 200px;
+	}
+	#sidebar.affix {
+		position: fixed;
+		top: 70px;
+		width: 200px;
 	}
 }
 @media (max-width:767px) {
@@ -360,6 +393,16 @@ label{
 		background-color: #1A87D7;  /*  #1E8184 */
 		color: #FFFFFF;
 		padding-left: 20px;
+	}
+	#sidebar.affix-top {
+		position: static;
+		margin-top: 30px;
+		width: 200px;
+	}
+	#sidebar.affix {
+		position: fixed;
+		top: 70px;
+		width: 200px;
 	}
 }
 @media (max-width:480px) {
