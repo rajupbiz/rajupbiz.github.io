@@ -25,7 +25,7 @@
 							<div class="row">
 								<div class="col-md-1">
 								</div>
-								<div class="col-md-10 one-edge-shadow">
+								<div class="col-md-10 one-edge-shadow g-header-main-row" >
 									<div class="row">
 										<div class="col-md-2">
 											<div class="g-header-img-div"><img alt="img" src="assets/img/gomaie_logo.png" width="140px;" class="img-rounded img-responsive"/></div>
@@ -54,7 +54,7 @@
 													      		<ul class="nav navbar-nav navbar-right" style="padding-right: 5px;"> 
 													        		<li><a href="home.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
 														        	<li><a href="search.html">Search</a></li>
-														        	<li class="active"><a href="update-profile.html">Update Profile</a></li>
+														        	<li class="active"><a href="update-profile.html" class="animate">Update Profile</a></li>
 														        	<li><a href="preview-profile.html">Preview Profile</a></li>
 														       		<li><a href="privacy-settings.html">Privacy Settings</a></li>
 														        	<li class="dropdown">
@@ -88,161 +88,349 @@
 		<div id="content">
 			<div class="row">
 				<div class="col-md-1"></div>
-				<div class="col-md-10">
+				<div class="col-md-10 g-content-main-row">
 					<div class="container-fluid" style="padding-left: 0px; padding-right: 0px;">
 						<div class="row">
 							<div class="col-md-3" id="leftCol">
 								<ul class="nav nav-pills nav-stacked affix" id="sidebar">
-									<li><a href="#sec0">Section 0</a></li>
-									<li><a href="#sec1">Section 1</a></li>
-									<li><a href="#sec2">Section 2</a></li>
-									<li><a href="#sec3">Section 3</a></li>
-									<li><a href="#sec4">Section 4</a></li>
+									<li><a href="#PersonalDetailSection">Personal Information</a></li>
+									<li><a href="#FamilySection">Family</a></li>
+									<li><a href="#ContactAndAddressSection">Contact & Address</a></li>
+									<li><a href="#EducationAndOccupationSection">Education & Occupation</a></li>
+									<li><a href="#ExpectationSection">Expectation</a></li>
+									<li><a href="#PhotosSection">Photos</a></li>
 								</ul>
 							</div>
-							<div class="col-md-9">
-							
-								<section id="sec0" style="padding-top: 10px;">
-									<h2>Section 0</h2>
-									<p>At Bootply we like to build simple Bootstrap templates that
-										utilize the code Bootstap CSS without a lot of customization. Sure
-										you can find a lot of Bootstrap themes and inspiration, but these
-										templates tend to be heavy on customization.</p>
-					
-									<hr>
-									<p>Rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-										quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-										voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
-										quia cor magni dolores eos qui ratione voluptatem sequi nesciunt.
-										Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-										consectetur, adipisci velit, sed quia non numquam eius modi tempora
-										incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut
-										enim ad minima veniam, quis nostrum exercitationem ullam corporis
-										suscipit laboriosam, nisi ut. Rem aperiam, eaque ipsa quae ab illo
-										inventore veritatis et quasi architecto beatae vitae dicta sunt
-										explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-										aut odit aut fugit, sed quia cor magni dolores eos qui ratione
-										voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-										ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
-										non numquam eius modi tempora incidunt ut labore et dolore magnam
-										aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-										exercitationem ullam corporis suscipit laboriosam, nisi ut!</p>
+							<div class="col-md-9" style="padding-left: 0px;">
 								
+								<section id="PersonalDetailSection" style="padding-top: 30px;">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="alert alert-warning" role="alert">
+												<span class="fa fa-info-circle" aria-hidden="true" style="padding-right: 5px;"></span><b>Some of the fields are auto populated based on inputs, please update the values if required or not correct.</b>
+											</div>		
+										</div>
+									</div>
+									
+									<div class="panel panel-info">
+										<div class="panel-heading"><b>Personal Information</b></div>
+		  								<div class="panel-body" style="padding-left: 20px;">
+		  								
+		  								<div class="row" style="padding-left: 30px;">
+		  									<div class="col-md-12">
+		  										<form action="#" method="post" role="form" class="form-horizontal">
+													
+													<fieldset>
+    													<legend style="font-size: 13px;">Basic Information</legend>
+    													
+    													<div class="form-group form-group-sm">
+    														<label class="col-sm-3 control-label" for="first-name">Full Name:</label>
+															<div class="col-sm-3">
+																<input class="form-control input-sm" type="text" id="first-name" placeholder="First Name">
+															</div>
+															<div class="col-sm-3">
+																<input class="form-control input-sm" type="text" id="middle-name" placeholder="Middle Name">
+															</div>
+															<div class="col-sm-3">
+																<input class="form-control input-sm" type="text" id="last-name" placeholder="Last Name">
+															</div>
+														</div>
+														<div class="form-group form-group-sm">
+    														<label class="col-sm-3 control-label" for="gender">Gender:</label>
+															<div class="col-sm-6">
+																<label class="radio-inline">
+																  <input type="radio" name="gender" id="gender-m" value="m"> Male
+																</label>
+																<label class="radio-inline">
+																  <input type="radio" name="gender" id="gender-f" value="f"> Female
+																</label>
+															</div>
+														</div>
+														<div class="form-group form-group-sm">
+    														<label class="col-sm-3 control-label" for="marital-status">Marital Status:</label>
+															<div class="col-sm-3">
+																<select id="marital-status" name="marital-status" class="form-control selectpicker show-menu-arrow">
+																	<option value="never-married" selected>Never Married</option>
+																	<option value="divorced">Divorced</option>
+																	<option value="widow">Widow</option>
+																</select>
+															</div>
+														</div>
+														<div class="form-group form-group-sm">
+    														<label class="col-sm-3 control-label" for="height">Height:</label>
+															<div class="col-sm-2" style="padding-right: 0px;">
+																<input class="form-control input-sm" type="text" id="height" placeholder="Height">
+															</div>
+															<label class="col-sm-1 control-label" style="text-align: left;">cms</label>
+														</div>
+														
+														<div class="form-group form-group-sm">
+															<label class="col-sm-3 control-label" for="weight">Weight:</label>
+															<div class="col-sm-2" style="padding-right: 0px;">
+																<input class="form-control input-sm" type="text" id="weight" placeholder="Weight" maxlength="3">
+															</div>
+															<label class="col-sm-1 control-label" style="text-align: left;">kgs</label>
+														</div>
+														
+    												</fieldset>
+    													
+													
+													<fieldset>
+    													<legend style="font-size: 13px;">Birth Information:</legend>
+    													
+    													<div class="form-group form-group-sm">
+															<label class="col-sm-3 control-label" for="birth-name">Birth Name:</label>
+															<div class="col-sm-3">
+																<input class="form-control input-sm" type="text" id="birth-name" placeholder="Birth Name">
+															</div>
+														</div>
+														
+														<div class="form-group form-group-sm">
+															<label class="col-sm-3 control-label" for="birth-place">Birth Place:</label>
+															<div class="col-sm-3">
+																<input class="form-control input-sm" type="text" id="birth-place" placeholder="Birth Place">
+															</div>
+														</div>
+														
+														<div class="form-group form-group-sm">
+															<label class="col-xs-3 control-label" for="birth-date"><span class="fa fa-birthday-cake" style="padding-right: 5px;"></span> Birth Date & Time:</label>
+															<div class="col-xs-3">
+													            <div class='input-group date' id='datetimepicker8'>
+													                <input type='text' class="form-control input-sm" id="birth-date" placeholder="Birth Date"/>
+													                <span class="input-group-addon">
+													                    <span class="fa fa-calendar">
+													                    </span>
+													                </span>
+													            </div>
+															</div>
+															<div class="col-xs-3">
+												                <div class='input-group date' id='datetimepicker3'>
+												                    <input type='text' class="form-control input-sm" id="birth-time" placeholder="Birth Time" />
+												                    <span class="input-group-addon">
+												                        <span class="glyphicon glyphicon-time"></span>
+												                    </span>
+												                </div>
+															</div>
+															<div class="col-xs-3">
+																<input class="form-control input-sm" type="text" id="birth-day" placeholder="Birth Day">
+															</div>
+														</div>
+    													
+    												</fieldset>
+    												
+    												
+    												<fieldset>
+    													<legend style="font-size: 13px;">Other Personal Information</legend>
+    													
+    													<div class="form-group form-group-sm">
+    														<label class="col-sm-3 control-label" for="blood-group">Blood Group:</label>
+															<div class="col-sm-3">
+																<select id="blood-group" name="blood-group" class="form-control selectpicker show-menu-arrow" title="Nothing selected">
+																	<option value="a-positive">A+</option>
+																	<option value="b-positive">B+</option>
+																	<option value="o-positive">O+</option>
+																	<option value="a-negative">A-</option>
+																	<option value="b-negative">B-</option>
+																	<option value="o-negative">O-</option>
+																</select>
+															</div>
+														</div>
+														
+    													<div class="form-group form-group-sm">
+															<label class="col-sm-3 control-label" for="hobbies">Hobbies:</label>
+															<div class="col-sm-9">
+																<textarea class="form-control input-sm" id="hobbies" placeholder="Hobbies" rows="1"></textarea>
+															</div>
+														</div>
+														
+														<div class="form-group form-group-sm">
+															<label class="col-sm-3 control-label" for="about-me">About Me:</label>
+															<div class="col-sm-9">
+																<textarea class="form-control input-sm" id="about-me" placeholder="About Me" rows="2"></textarea>
+															</div>
+														</div>
+														
+														<!-- <div class="form-group form-group-sm">
+															<label class="col-sm-3 control-label" for="rashi">Rashi:</label>
+															<div class="col-sm-3">
+																<input class="form-control input-sm" type="text" id="rashi" placeholder="Rashi">
+															</div>
+														</div> -->
+														
+														<div class="form-group form-group-sm">
+															<label class="col-sm-3 control-label" for="is-mangal">Is Mangal?:</label>
+															<div class="col-sm-6">
+																<label class="radio-inline">
+																  <input type="radio" name="is-mangal" id="is-mangal-y" value="yes"> Yes
+																</label>
+																<label class="radio-inline">
+																  <input type="radio" name="is-mangal" id="is-mangal-n" value="no" checked="checked"> No
+																</label>
+															</div>
+														</div>
+														
+    												</fieldset>
+													
+												</form>
+		  									
+		  									</div>
+		  								</div>
+		  									
+		  								</div>
+									</div>
 								</section>
-							
-								<section id="sec1" style="padding-top: 5px;">
-									<h2>Section 1</h2>
-									<p>At Bootply we like to build simple Bootstrap templates that
-										utilize the code Bootstap CSS without a lot of customization. Sure
-										you can find a lot of Bootstrap themes and inspiration, but these
-										templates tend to be heavy on customization.</p>
-					
-									<hr>
-									<p>Rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-										quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-										voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
-										quia cor magni dolores eos qui ratione voluptatem sequi nesciunt.
-										Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-										consectetur, adipisci velit, sed quia non numquam eius modi tempora
-										incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut
-										enim ad minima veniam, quis nostrum exercitationem ullam corporis
-										suscipit laboriosam, nisi ut. Rem aperiam, eaque ipsa quae ab illo
-										inventore veritatis et quasi architecto beatae vitae dicta sunt
-										explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-										aut odit aut fugit, sed quia cor magni dolores eos qui ratione
-										voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-										ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
-										non numquam eius modi tempora incidunt ut labore et dolore magnam
-										aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-										exercitationem ullam corporis suscipit laboriosam, nisi ut!</p>
-								
+
+								<section id="FamilySection" style="padding-top: 5px;">
+									<div class="panel panel-info">
+										<div class="panel-heading"><b>Family Information</b></div>
+		  								<div class="panel-body" style="padding-left: 20px;">
+		  								
+		  								<div class="row" style="padding-left: 30px;">
+		  									<div class="col-md-12">
+		  										<form action="#" method="post" role="form" class="form-horizontal">
+													<fieldset>
+    													<legend style="font-size: 13px;">Parents Information</legend>
+    													
+    													<div class="form-group form-group-sm">
+    														<label class="col-sm-3 control-label" for="first-name">Father's Full Name:</label>
+															<div class="col-sm-3">
+																<input class="form-control input-sm" type="text" id="father-first-name" placeholder="First Name">
+															</div>
+															<div class="col-sm-3">
+																<input class="form-control input-sm" type="text" id="father-middle-name" placeholder="Middle Name">
+															</div>
+															<div class="col-sm-3">
+																<input class="form-control input-sm" type="text" id="father-last-name" placeholder="Last Name">
+															</div>
+														</div>
+														
+														<div class="form-group form-group-sm">
+    														<label class="col-sm-3 control-label" for="first-name">Mother's First Name:</label>
+															<div class="col-sm-3">
+																<input class="form-control input-sm" type="text" id="mother-first-name" placeholder="First Name">
+															</div>
+														</div>
+    												</fieldset>
+    													
+													<fieldset>
+    													<legend style="font-size: 13px;">Sibling(s) Information:</legend>
+    													
+    													<div class="form-group form-group-sm">
+    														<label class="col-sm-3 control-label" for="no-of-brother">No. of Brother's:</label>
+															<div class="col-sm-3">
+																<input class="form-control input-sm" type="text" id="no-of-brother" placeholder="No. of Brother's">
+															</div>
+														</div>
+														
+														<div class="form-group form-group-sm">
+    														<label class="col-sm-3 control-label" for="no-of-sister">No. of Married Brother's:</label>
+															<div class="col-sm-3">
+																<input class="form-control input-sm" type="text" id="no-of-married-sister" placeholder="No. of Married Brother's">
+															</div>
+														</div>
+														
+														<div class="form-group form-group-sm">
+    														<label class="col-sm-3 control-label" for="no-of-sister">No. of Sister's:</label>
+															<div class="col-sm-3">
+																<input class="form-control input-sm" type="text" id="no-of-sister" placeholder="No. of Sister's">
+															</div>
+														</div>
+
+    													<div class="form-group form-group-sm">
+    														<label class="col-sm-3 control-label" for="no-of-sister">No. of Married Sister's:</label>
+															<div class="col-sm-3">
+																<input class="form-control input-sm" type="text" id="no-of-married-sister" placeholder="No. of Married Sister's">
+															</div>
+														</div>
+    												</fieldset>
+    												
+    												<fieldset>
+    													<legend style="font-size: 13px;">Other Family Information</legend>
+    													
+    													<div class="form-group form-group-sm">
+    														<label class="col-sm-3 control-label" for="family-occupation">Family Occupation:</label>
+															<div class="col-sm-3">
+																<input class="form-control input-sm" type="text" id="family-occupation" placeholder="Family Occupation">
+															</div>
+														</div>
+														
+														<div class="form-group form-group-sm">
+															<label class="col-sm-3 control-label" for="family-wealth">Family Wealth:</label>
+															<div class="col-sm-9">
+																<textarea class="form-control input-sm" id="family-wealth" placeholder="Family Wealth" rows="1"></textarea>
+															</div>
+														</div>
+														
+    													<div class="form-group form-group-sm">
+															<label class="col-sm-3 control-label" for="about-family">About Family:</label>
+															<div class="col-sm-9">
+																<textarea class="form-control input-sm" id="about-family" placeholder="About Family" rows="2"></textarea>
+															</div>
+														</div>
+    												</fieldset>
+    												
+    												<fieldset>
+    													<legend style="font-size: 13px;">Mama's Information</legend>
+    													
+    													<div class="form-group form-group-sm">
+    														<label class="col-sm-3 control-label" for="mama-full-name">Mama's Full Name:</label>
+															<div class="col-sm-3">
+																<input class="form-control input-sm" type="text" id="mama-first-name" placeholder="First Name">
+															</div>
+															<div class="col-sm-3">
+																<input class="form-control input-sm" type="text" id="mama-middle-name" placeholder="Middle Name">
+															</div>
+															<div class="col-sm-3">
+																<input class="form-control input-sm" type="text" id="mama-last-name" placeholder="Last Name">
+															</div>
+														</div>
+														
+														<div class="form-group form-group-sm">
+    														<label class="col-sm-3 control-label" for="mother-native-place">Mama's Native Place:</label>
+															<div class="col-sm-3">
+																<input class="form-control input-sm" type="text" id="mother-native-place" placeholder="Mama's Native Place">
+															</div>
+														</div>
+														
+														<div class="form-group form-group-sm">
+    														<label class="col-sm-3 control-label" for="mama-current-place">Mama's Current Place:</label>
+															<div class="col-sm-3">
+																<input class="form-control input-sm" type="text" id="mama-current-place" placeholder="Mama's Current Place">
+															</div>
+														</div>
+    												</fieldset>
+												</form>
+		  									
+		  									</div>
+		  								</div>
+		  									
+		  								</div>
+									</div>
 								</section>
 				
-								<section id="sec2" style="padding-top: 5px;">
+								<section id="ContactAndAddressSection" style="padding-top: 5px;">
 									<h2>Section 2</h2>
-									<p>At Bootply we like to build simple Bootstrap templates that
-										utilize the code Bootstap CSS without a lot of customization. Sure
-										you can find a lot of Bootstrap themes and inspiration, but these
-										templates tend to be heavy on customization.</p>
-					
-									<hr>
-									<p>Rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-										quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-										voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
-										quia cor magni dolores eos qui ratione voluptatem sequi nesciunt.
-										Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-										consectetur, adipisci velit, sed quia non numquam eius modi tempora
-										incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut
-										enim ad minima veniam, quis nostrum exercitationem ullam corporis
-										suscipit laboriosam, nisi ut. Rem aperiam, eaque ipsa quae ab illo
-										inventore veritatis et quasi architecto beatae vitae dicta sunt
-										explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-										aut odit aut fugit, sed quia cor magni dolores eos qui ratione
-										voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-										ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
-										non numquam eius modi tempora incidunt ut labore et dolore magnam
-										aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-										exercitationem ullam corporis suscipit laboriosam, nisi ut!</p>
+									
 								
 								</section>
 				
-								<section id="sec3" style="padding-top: 5px;">
+								<section id="EducationAndOccupationSection" style="padding-top: 5px;">
 									<h2>Section 3</h2>
-									<p>At Bootply we like to build simple Bootstrap templates that
-										utilize the code Bootstap CSS without a lot of customization. Sure
-										you can find a lot of Bootstrap themes and inspiration, but these
-										templates tend to be heavy on customization.</p>
-					
-									<hr>
-									<p>Rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-										quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-										voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
-										quia cor magni dolores eos qui ratione voluptatem sequi nesciunt.
-										Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-										consectetur, adipisci velit, sed quia non numquam eius modi tempora
-										incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut
-										enim ad minima veniam, quis nostrum exercitationem ullam corporis
-										suscipit laboriosam, nisi ut. Rem aperiam, eaque ipsa quae ab illo
-										inventore veritatis et quasi architecto beatae vitae dicta sunt
-										explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-										aut odit aut fugit, sed quia cor magni dolores eos qui ratione
-										voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-										ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
-										non numquam eius modi tempora incidunt ut labore et dolore magnam
-										aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-										exercitationem ullam corporis suscipit laboriosam, nisi ut!</p>
+									
 								
 								</section>
 				
-				
-								<section id="sec4" style="padding-top: 5px;">
+								<section id="ExpectationSection" style="padding-top: 5px;">
 									<h2>Section 4</h2>
-									<p>At Bootply we like to build simple Bootstrap templates that
-										utilize the code Bootstap CSS without a lot of customization. Sure
-										you can find a lot of Bootstrap themes and inspiration, but these
-										templates tend to be heavy on customization.</p>
-					
-									<hr>
-									<p>Rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-										quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-										voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
-										quia cor magni dolores eos qui ratione voluptatem sequi nesciunt.
-										Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-										consectetur, adipisci velit, sed quia non numquam eius modi tempora
-										incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut
-										enim ad minima veniam, quis nostrum exercitationem ullam corporis
-										suscipit laboriosam, nisi ut. Rem aperiam, eaque ipsa quae ab illo
-										inventore veritatis et quasi architecto beatae vitae dicta sunt
-										explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-										aut odit aut fugit, sed quia cor magni dolores eos qui ratione
-										voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-										ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
-										non numquam eius modi tempora incidunt ut labore et dolore magnam
-										aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-										exercitationem ullam corporis suscipit laboriosam, nisi ut!</p>
+									
 								
 								</section>
-				
+								
+								<section id="PhotosSection" style="padding-top: 5px;">
+									<h2>Section 5</h2>
+									
+								
+								</section>
 							</div>
 						</div>
 					</div>
@@ -287,13 +475,14 @@
 
 	</div>
 	
-	
 	<script src="assets/components/jquery/dist/jquery.min.js"></script>
+	<script src="assets/components/moment/min/moment.min.js"></script>
 	<script src="assets/components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="assets/components/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
 	<script src="assets/components/lightbox2/dist/js/lightbox.js"></script>
 	<script src="assets/components/typeahead.js/dist/typeahead.bundle.js"></script>
-
+	<script src="assets/components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+	<script src="assets/js/g-common.js"></script>
 	 
 	<script type="text/javascript">
 		$(document).ready(function() {
@@ -327,7 +516,53 @@
 					}
 				}
 			});
+			
+			 $('#datetimepicker8').datetimepicker({
+	            	
+            	/* defaultDate: "1990-01-01", */
+            	minDate: "1950-01-01 00:00:00",
+            	/* maxDate: "2000-12-31 00:00:00", */
+            	format: "DD/MM/YYYY",
+                icons: {
+                    /* time: "fa fa-clock-o", */
+                    date: "fa fa-birthday-cake",	/* fa fa-calendar */
+                    up: "fa fa-arrow-up",
+                    down: "fa fa-arrow-down"
+                }
+            });
+            
+            $("#datetimepicker8").on("dp.change", function (e) {
+            	$("#birth-day").val(getDayOfWeekFromDay(new Date(e.date).getDay()));
+            });
+			
+            $('#datetimepicker3').datetimepicker({
+                format: 'LT'
+            });
+            
+            
+            $("#marital-status").selectpicker({
+                style: "btn-default btn-sm"
+            });
+            
+            $("#blood-group").selectpicker({
+                style: "btn-default btn-sm"
+            });
+            
+            
+            $('#first-name').bind('keypress keyup blur', function() {
+                $('#birth-name').val($(this).val());
+            });
+            
+            $('#middle-name').bind('keypress keyup blur', function() {
+                $('#father-first-name').val($(this).val());
+            });
+            
+            $('#last-name').bind('keypress keyup blur', function() {
+                $('#father-last-name').val($(this).val());
+            });
+            
 		});
+		
 	</script>
 
 </body>
