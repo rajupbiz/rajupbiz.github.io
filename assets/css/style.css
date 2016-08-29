@@ -6,6 +6,7 @@
 @import '../components/font-awesome/css/font-awesome.min.css';
 @import '../components/lightbox2/dist/css/lightbox.css';
 @import '../components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css';
+@import '../components/bootstrap-fileinput/css/fileinput.min.css';
 
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:00,300,300italic,600,700,800';
 @import 'https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,500,500i,700,700i';
@@ -155,6 +156,11 @@ label{
 .g-text-header-3{
 	font-weight: 700;
 	font-size: 14px;
+}
+
+.g-img{
+	/* height: 60%;
+	width: 60%; */
 }
 
 /******** Common Header *************************/
@@ -362,6 +368,9 @@ label{
 		top: 70px;
 		width: 230px;
 	}
+	.g-d-right-0px{
+		padding-right: 0px;
+	}
 }
 @media (min-width: 768px) and (max-width: 979px) {
 	.g-header-above-menu{
@@ -391,6 +400,9 @@ label{
 		top: 70px;
 		width: 230px;
 	}
+	.g-d-right-0px{
+		padding-right: 0px;
+	}
 }
 @media (max-width:767px) {
 	.g-header-above-menu{
@@ -419,6 +431,9 @@ label{
 	}
 	#sidebar.affix-top, #sidebar.affix {
 		position: static;
+	}
+	.g-m-bottom-padding-5px{
+		padding-bottom: 5px;
 	}
 }
 @media (max-width:480px) {
@@ -451,7 +466,9 @@ label{
 	#sidebar.affix-top, #sidebar.affix {
 		position: static;
 	}
-	
+	.g-m-bottom-padding-5px{
+		padding-bottom: 5px;
+	}
 	
 }
 @media (max-width:320px) {
